@@ -1,7 +1,7 @@
 <template>
     <div class="bg-zinc-900 text-purple-200">
         <div class="container mx-auto flex items-center justify-between">
-            <h1 class="tracking-tighter text-3xl font-thin"><span class="text-lg font-bold">SHOP</span>LOCAL<span class="font-normal">Weslaco</span></h1>
+            <h1 class="tracking-tighter text-3xl font-thin"><span class="text-lg font-bold">Vue</span>Fake<span class="font-normal">Auth</span></h1>
             <nav>
                 <ul class="flex space-x-4">
                     <router-link to="/">
