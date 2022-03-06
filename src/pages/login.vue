@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import useAuth from "../useAuth";
+import useError from "../useError";
 
 const { isAuthenticated, login } = useAuth();
 
@@ -10,12 +11,17 @@ const password = ref("");
 
 const router = useRouter(); 
 
+
 const logginIn = () => {
     login(username.value, password.value);
     if (isAuthenticated.value) {
         router.push("/");
+    } else {
+        setError("Invalid username or password");
     }
 };
+
+const { error, setError } = useError();
 </script>
 
 <template>
@@ -31,5 +37,6 @@ const logginIn = () => {
                 <button type="submit" @submit.prevent="logginIn" class="py-2 rounded-lg bg-purple-500 font-bold" >Login</button>
                 </form>  
         </div>
+        <div v-if="error" class="absolute w-1/3 p-4 text-center text-red-800 bg-red-300 rounded-lg bottom-2 right-2">{{ error }}</div>
     </div>
 </template>
