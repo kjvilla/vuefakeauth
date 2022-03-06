@@ -16,8 +16,8 @@
                     <li class="py-8 px-4 hover:cursor-pointer hover:bg-purple-500 hover:text-purple-800">Login
                     </li>
                     </router-link>
-                    <router-link to="/Contact">
-                    <li class="py-8 px-4 hover:cursor-pointer hover:bg-purple-500 hover:text-purple-800">Contact
+                    <router-link to="/Secret">
+                    <li class="py-8 px-4 hover:cursor-pointer hover:bg-purple-500 hover:text-purple-800">Secret
                     </li>
                     </router-link>
                 </ul>

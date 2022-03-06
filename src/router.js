@@ -2,7 +2,7 @@ import {createRouter, createWebHistory} from "vue-router";
 import Index from "./pages/index.vue";
 import About from "./pages/about.vue";
 import Login from "./pages/login.vue";
-import Contact from "./pages/contact.vue";
+import Secret from "./pages/secret.vue";
 import NotFound from "./pages/404.vue";
 
 const routes = [
@@ -22,9 +22,9 @@ const routes = [
         component: Login,
     },
     {
-        path: "/contact",
-        name: "Contact",
-        component: Contact,
+        path: "/secret",
+        name: "Secret",
+        component: Secret,
     },
     {
         path: "/:pathMatch(.*)*",
