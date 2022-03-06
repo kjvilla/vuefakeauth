@@ -1,3 +1,9 @@
+<script setup></script>
+
 <template>
-    <h1 class="font-mono text-lg">Home Page</h1>
+<div class ="flex flex-col space-y-12 items-center justify-center min-h-screen-nonav">
+    <h2 class="text-6xl tracking-tighter font-extralight">Welcome</h2> 
+<img src="../assets/bgindex.png" alt="Hello BG" >  
+</div>
+
 </template>
